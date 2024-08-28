@@ -50,6 +50,12 @@ function generateRandomNumber(){
     let cardsWhoAreNotUsed = cards.filter((card) => {
         return card.isUsed === false;
     });
+    if(cardsWhoAreNotUsed.length === 0){
+        refreshTheDeck();
+        cardsWhoAreNotUsed = cards.filter((card) => {
+            return card.isUsed === false;
+        });
+    }
     let lengthOfArray = cardsWhoAreNotUsed.length;
     let randomNumber = Math.floor(Math.random() * lengthOfArray);
     cardsWhoAreNotUsed[randomNumber].isUsed = true;
@@ -233,4 +239,8 @@ function arrangeTheBetAfterGame(){
     if(isWon){
         chipsOfPlayer += bet * 2;
     }
+}
+
+function refreshTheDeck(){
+    cards.forEach((card) => card.isUsed = false);
 }
