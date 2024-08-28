@@ -1,0 +1,127 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background-color: rgb(39, 168, 43);
+}
+
+header {
+  border-bottom: 5px solid black;
+  background-color: rgb(39, 168, 43);
+  font-family: "Sevillana", sans-serif;
+}
+
+header h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+main {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  background-image: url(./images/vecteezy_felt-white-soft-rough-textile-material-background-texture_15233866.jpg);
+  background-size: cover;
+  height: 100%;
+  text-align: center;
+  color: white;
+}
+
+.bettingScreen {
+  margin: 0;
+}
+
+.bettingScreen h2 {
+  margin-top: 0;
+  padding-top: 50px;
+}
+
+.bettingScreen label {
+  font-size: 2rem;
+}
+
+.bettingScreen button {
+  color: white;
+  background-color: black;
+  font-size: large;
+  border-radius: 1rem;
+}
+
+.bettingScreen button:hover {
+  transform: scale(1.2);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.playButton {
+  font-size: 2rem;
+  padding: 10px 20px;
+  margin: 20px;
+  border-radius: 2rem;
+}
+
+.stopButton {
+  font-size: 2rem;
+  padding: 10px 20px;
+  margin: 20px;
+  border-radius: 2rem;
+}
+
+.playButton:hover {
+  background-color: aliceblue;
+}
+
+.stopButton:hover {
+  background-color: aliceblue;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.pointsPlayer {
+  width: 50%;
+}
+
+.pointsBank {
+  width: 50%;
+}
+
+.pointsPlayer img {
+  width: 15%;
+  height: auto;
+}
+
+.pointsBank img {
+  width: 15%;
+  height: auto;
+}
+
+main h2 {
+  font-size: 3rem;
+}
+
+main h3 {
+  font-size: 2rem;
+}
+
+main p {
+  font-size: 1.5rem;
+}
+
+.resetButton button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 2rem;
+}
+
+.resetButton button:hover {
+  background-color: aliceblue;
+}
